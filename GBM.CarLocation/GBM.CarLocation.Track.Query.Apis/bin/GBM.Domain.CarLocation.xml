@@ -14,9 +14,24 @@
             DTO de transporte
             </summary>
         </member>
+        <member name="P:GBM.CarLocation.Domain.DTO.CarLocationRequestCommandDto.operation">
+            <summary>
+            Command to perform with CarLocation Entity
+            </summary>
+        </member>
         <member name="P:GBM.CarLocation.Domain.Entities.CarLocationEntity.Location">
             <summary>
-            Geoposition
+            Geoposition of vehicle
+            </summary>
+        </member>
+        <member name="P:GBM.CarLocation.Domain.Entities.CarLocationEntity.CarIdentifier">
+            <summary>
+            Reference of unique Card Id 
+            </summary>
+        </member>
+        <member name="P:GBM.CarLocation.Domain.Entities.CarLocationEntity.LastUpdatedDate">
+            <summary>
+            Las time when Car position its Updated
             </summary>
         </member>
         <member name="M:GBM.CarLocation.Domain.Entities.CarLocationEntity.SetAction(GBM.CarLocation.Domain.Entities.CarLocationActions)">

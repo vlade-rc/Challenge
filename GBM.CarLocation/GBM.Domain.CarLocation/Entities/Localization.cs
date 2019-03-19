@@ -8,6 +8,7 @@ namespace GBM.CarLocation.Domain.Entities
 {
     public class Localization
     {
+
         public float Latitude { get; set; }
         public float Longitude { get; set; }
 

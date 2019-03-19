@@ -1,4 +1,5 @@
 ﻿using GBM.CarLocation.Domain.Entities;
+using GBM.CarLocation.Repository.Data;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 namespace GBM.CarLocation.Respository.DataEntity
 {
     [BsonIgnoreExtraElements]
+    [RepositoryConfig(CollectionName = "CarLocation")]
     public class CarLocationData
     {
        public string Identifier { get; set; }

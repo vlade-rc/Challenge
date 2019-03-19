@@ -53,7 +53,7 @@ namespace GBM.CarLocation.Repository
             CarLocationData data = MapperHelper.MapCarLocationEntityToData(item);
             data.LastUpdatedDate = DateTime.Now;
             var repository = IoCFactory.Instance.Resolve<ICarLocationEventRepository>();
-            await repository.PersistNewItem(new CarLocationEvents<string> { CarIdentifier = item.CarIdentifier, Event = item.GetAction().ToString(), EventContent = Serializers.JsonSerializer(item.Location), Identifier = Guid.NewGuid().ToString(), InsertedDate = DateTime.Now });
+            await repository.PersistNewItem(new CarLocationEvents<string> { CarIdentifier = item.CarIdentifier, Event = item.GetAction().ToString(), Field = "Item", EventContent = Serializers.JsonSerializer(item.Location), Identifier = Guid.NewGuid().ToString(), InsertedDate = DateTime.Now });
 
             return await ((IMongoDatabase)UnitOfWork.Context).GetCollection<CarLocationData>(_CollectionName).InsertOneAsync(data).ContinueWith(x => { return x.IsCompleted; });
         }
@@ -65,7 +65,7 @@ namespace GBM.CarLocation.Repository
             CarLocationFilter filterQuery = (CarLocationFilter)filter;
            var update = Builders<CarLocationData>.Update.Set(x => x.Location, carLocation.Location).CurrentDate("LastUpdatedDate");
             var repository = IoCFactory.Instance.Resolve<ICarLocationEventRepository>();
-            await repository.PersistNewItem(new CarLocationEvents<string> { CarIdentifier = carLocation.CarIdentifier, Event = carLocation.GetAction().ToString(), EventContent = Serializers.JsonSerializer(carLocation.Location), Identifier = Guid.NewGuid().ToString(), InsertedDate = DateTime.Now });
+            await repository.PersistNewItem(new CarLocationEvents<string> { CarIdentifier = carLocation.CarIdentifier, Event = carLocation.GetAction().ToString(), Field = "Location", EventContent = Serializers.JsonSerializer(carLocation.Location), Identifier = Guid.NewGuid().ToString(), InsertedDate = DateTime.Now });
             
             await ((IMongoDatabase)UnitOfWork.Context).GetCollection<CarLocationData>(_CollectionName).UpdateOneAsync(x=> x.CarIdentifier == filterQuery.CarIdentifier, update);
             

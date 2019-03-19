@@ -1,5 +1,7 @@
 ﻿using GBM.CarLocation.Domain.Entities;
 using GBM.CarLocation.Domain.Messages;
+using GBM.CarLocation.Repository;
+using GBM.CarLocation.Respository.DataEntity;
 using GBM.CarLocation.Track.Command.Api.Filters;
 using GBM.CarLocation.Track.Command.Api.IoC;
 using GBM.Infrastructure.Domain;
@@ -38,7 +40,16 @@ namespace GBM.CarLocation.Track.Command.Api
                 m.AutoMap();
                 m.SetIdMember(m.GetMemberMap(c => c.Identifier));
             });
-
+            BsonClassMap.RegisterClassMap<CarLocationData>(m =>
+            {
+                m.AutoMap();
+                m.SetIdMember(m.GetMemberMap(c => c.Identifier));
+            });
+            BsonClassMap.RegisterClassMap<CarLocationEvents<string>>(m =>
+            {
+                m.AutoMap();
+                m.SetIdMember(m.GetMemberMap(c => c.Identifier));
+            });
 
 
         }

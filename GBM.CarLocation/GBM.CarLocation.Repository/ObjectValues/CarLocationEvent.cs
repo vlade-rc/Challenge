@@ -14,12 +14,14 @@ namespace GBM.CarLocation.Repository
   /// </summary>
   /// <typeparam name="T"></typeparam>
   [RepositoryConfig( CollectionName ="CarLocationHistory")]
-    public class CarLocationEvents<T> : EntityBase, IEntity 
+    public class CarLocationEvents<T> : EntityBase
     {
 
 
         public string CarIdentifier { get; set; }
         public DateTime InsertedDate { get; set; }
+
+        public string Field { get; set; }
 
         public string Event { get; set; }      
 

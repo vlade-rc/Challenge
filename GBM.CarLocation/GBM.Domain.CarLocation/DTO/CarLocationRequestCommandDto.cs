@@ -20,7 +20,9 @@ namespace GBM.CarLocation.Domain.DTO
     /// </summary>
     public class CarLocationRequestCommandDto : RequestCommandBaseDto<CarLocationEntity>
     {
-
+        /// <summary>
+        /// Command to perform with CarLocation Entity
+        /// </summary>
         public CommandOperation operation { get; set; }
     }
 }

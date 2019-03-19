@@ -19,13 +19,17 @@ namespace GBM.CarLocation.Domain.Entities
     public class CarLocationEntity: EntityBase
     {
         /// <summary>
-        /// Geoposition
+        /// Geoposition of vehicle
         /// </summary>
         public Localization Location { get; set; }
-
+        /// <summary>
+        /// Reference of unique Card Id 
+        /// </summary>
 
         public string CarIdentifier { get; set; }
-
+        /// <summary>
+        /// Las time when Car position its Updated
+        /// </summary>
         public DateTime LastUpdatedDate { get; set; }
 
         /// <summary>
