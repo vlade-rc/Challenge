@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GBM.Domain.CarLocation</name>
+    </assembly>
+    <members>
+        <member name="T:GBM.CarLocation.Domain.DTO.CommandOperation">
+            <summary>
+            Enumeradorde comandos disponibles a realizar con la entidad 
+            </summary>
+        </member>
+        <member name="T:GBM.CarLocation.Domain.DTO.CarLocationRequestCommandDto">
+            <summary>
+            DTO de transporte
+            </summary>
+        </member>
+        <member name="P:GBM.CarLocation.Domain.Entities.CarLocationEntity.Location">
+            <summary>
+            Geoposition
+            </summary>
+        </member>
+        <member name="M:GBM.CarLocation.Domain.Entities.CarLocationEntity.SetAction(GBM.CarLocation.Domain.Entities.CarLocationActions)">
+            <summary>
+            Indica que acción se ejecutará con la entidad
+            </summary>
+            <param name="resourceAction"></param>
+        </member>
+        <member name="M:GBM.CarLocation.Domain.Entities.CarLocationEntity.GetAction">
+            <summary>
+            Obtiene la accion que se ejecutara con la entidad
+            </summary>
+            <param name="resourceAction"></param>
+        </member>
+        <member name="T:GBM.CarLocation.Domain.Repository.ICarLocationRepository">
+            <summary>
+            Repositorio para la entidad de posicionamiento
+            </summary>
+        </member>
+    </members>
+</doc>

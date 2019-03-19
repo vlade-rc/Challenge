@@ -1,0 +1,24 @@
+{
+  "Messages": [
+    {
+      "Code": "GBM.Infrastructure.Messages.Generic",
+      "Message": "Error Gnérico"
+    },
+    {
+      "Code": "GBM.Infrastructure.Messages.ApplicationName",
+      "Message": "GBM Challenge"
+    },
+    {
+      "Code": "GBM.Infrastructure.Messages.InnerExceptionFormat",
+      "Message": "InnerException {0}"
+    },
+    {
+      "Code": "GBM.Infrastructure.Messages.User",
+      "Message": "User"
+    },
+    {
+      "Code": "GBM.Infrastructure.Messages.PropCanNotBeNullFormat",
+      "Message": "The {0} property cannot be set to null."
+    }
+  ]
+}

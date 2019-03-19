@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.Infrastructure", "GBM.Infrastructure\GBM.Infrastructure.csproj", "{C41A142B-E762-47B4-93C4-778499CF31DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.CarLocation.Domain", "GBM.Domain.CarLocation\GBM.CarLocation.Domain.csproj", "{E7C22914-5117-4EAD-8FC4-B89DA9936EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.CarLocation.Repository", "GBM.CarLocation.Repository\GBM.CarLocation.Repository.csproj", "{378B22FD-9697-4979-BB56-B3077E490825}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hook", "Hook", "{9D5CADFF-5F31-4638-9FAD-5269C707F1EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.CarLocation.Track.Command.Api", "GBM.CarLocation.Track.Command.Api\GBM.CarLocation.Track.Command.Api.csproj", "{7909196B-A7D8-4EE9-ABE9-440966211F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.CarLocation.Track.Query.Apis", "GBM.CarLocation.Track.Query.Apis\GBM.CarLocation.Track.Query.Apis.csproj", "{189FFE97-A030-44AD-BB37-952D21E380A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.CarLocation.Gateway.Api", "GBM.CarLocation.Gateway.Api\GBM.CarLocation.Gateway.Api.csproj", "{730F8FD8-BD54-4AF8-9AFB-322E6DB52F28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{71AB2600-ABAF-4151-818A-DFE635B8369F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.Identity.Api", "GBM.Identity.Api\GBM.Identity.Api.csproj", "{267C397D-C1A0-478B-BD77-AD860BF6E763}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{51734781-F76F-4B83-8F95-EB9CE82A40CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queu", "Queu", "{FB1E03FE-9DC5-4B34-9651-7B7D3E370F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBM.HookProvider.Api", "GBM.HookProvider.Api\GBM.HookProvider.Api.csproj", "{3284190F-69FF-4DE2-9BD1-3149A53EB8D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C41A142B-E762-47B4-93C4-778499CF31DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41A142B-E762-47B4-93C4-778499CF31DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41A142B-E762-47B4-93C4-778499CF31DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41A142B-E762-47B4-93C4-778499CF31DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C22914-5117-4EAD-8FC4-B89DA9936EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C22914-5117-4EAD-8FC4-B89DA9936EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C22914-5117-4EAD-8FC4-B89DA9936EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C22914-5117-4EAD-8FC4-B89DA9936EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378B22FD-9697-4979-BB56-B3077E490825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378B22FD-9697-4979-BB56-B3077E490825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378B22FD-9697-4979-BB56-B3077E490825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378B22FD-9697-4979-BB56-B3077E490825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7909196B-A7D8-4EE9-ABE9-440966211F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7909196B-A7D8-4EE9-ABE9-440966211F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7909196B-A7D8-4EE9-ABE9-440966211F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7909196B-A7D8-4EE9-ABE9-440966211F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189FFE97-A030-44AD-BB37-952D21E380A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189FFE97-A030-44AD-BB37-952D21E380A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189FFE97-A030-44AD-BB37-952D21E380A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189FFE97-A030-44AD-BB37-952D21E380A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730F8FD8-BD54-4AF8-9AFB-322E6DB52F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730F8FD8-BD54-4AF8-9AFB-322E6DB52F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730F8FD8-BD54-4AF8-9AFB-322E6DB52F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730F8FD8-BD54-4AF8-9AFB-322E6DB52F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267C397D-C1A0-478B-BD77-AD860BF6E763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267C397D-C1A0-478B-BD77-AD860BF6E763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267C397D-C1A0-478B-BD77-AD860BF6E763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267C397D-C1A0-478B-BD77-AD860BF6E763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3284190F-69FF-4DE2-9BD1-3149A53EB8D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3284190F-69FF-4DE2-9BD1-3149A53EB8D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3284190F-69FF-4DE2-9BD1-3149A53EB8D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3284190F-69FF-4DE2-9BD1-3149A53EB8D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7C22914-5117-4EAD-8FC4-B89DA9936EB8} = {71AB2600-ABAF-4151-818A-DFE635B8369F}
+		{7909196B-A7D8-4EE9-ABE9-440966211F73} = {51734781-F76F-4B83-8F95-EB9CE82A40CD}
+		{189FFE97-A030-44AD-BB37-952D21E380A5} = {51734781-F76F-4B83-8F95-EB9CE82A40CD}
+		{730F8FD8-BD54-4AF8-9AFB-322E6DB52F28} = {51734781-F76F-4B83-8F95-EB9CE82A40CD}
+		{267C397D-C1A0-478B-BD77-AD860BF6E763} = {51734781-F76F-4B83-8F95-EB9CE82A40CD}
+		{3284190F-69FF-4DE2-9BD1-3149A53EB8D9} = {9D5CADFF-5F31-4638-9FAD-5269C707F1EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D5A9B2F-DB2F-4B9F-ABDD-B55FA0237EF4}
+	EndGlobalSection
+EndGlobal

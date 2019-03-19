@@ -1,0 +1,24 @@
+{
+  "Messages": [
+    {
+      "Code": "UniqueIdProcessError",
+      "Message": "El evento enviado ya fue procesado anteriormente"
+    },
+    {
+      "Code": "UniqueIdMandatoryError",
+      "Message": "El Id de referencia es obligatorio"
+    },
+    {
+      "Code": "LocalizationError",
+      "Message": "La información de Localización es inválida"
+    },
+    {
+      "Code": "CarIdentifierError",
+      "Message": "El identificador de vehiculo no es valido"
+    },
+    {
+      "Code": "ProcessError",
+      "Message": "Ocurrio un error al procesar la solicitud"
+    }
+  ]
+}
