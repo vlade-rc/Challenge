@@ -21,7 +21,7 @@ namespace GBM.Identity.Api
                 .EnableSwagger(c =>
                 {
 
-                    c.SingleApiVersion("v1", "Query Example API");
+                    c.SingleApiVersion("v1", "Identity Token API");
                     c.DescribeAllEnumsAsStrings();
                     // c.IncludeXmlComments(string.Format(@"{0}\bin\GBM.Domain.CarLocation.xml", System.AppDomain.CurrentDomain.BaseDirectory));
 

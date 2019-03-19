@@ -14,7 +14,7 @@ using Swashbuckle.Swagger.Annotations;
 
 namespace GBM.CarLocation.Gateway.Api.Controllers
 {
-   // [Authorize]
+    [Authorize]
     public class LocationTrackController : ApiController
     {
 
